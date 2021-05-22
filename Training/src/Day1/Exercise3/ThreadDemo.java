@@ -4,7 +4,7 @@ class ThreadDemo implements Runnable{
 int n=0;
 	@Override
 	public void run() {
-System.out.println("Thread "+Thread.currentThread().getId()+" is Running");
+//System.out.println("Thread "+Thread.currentThread().getId()+" is Running");
 			Fact(n);
 	}
 	

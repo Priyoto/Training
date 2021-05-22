@@ -9,17 +9,9 @@ public class main {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter your input");
 		String input=sc.next();
-		if(input.equals("Circle")) {
-			new Circle().display();
-		}
-		else if(input.equals("Rectangle")) {
-			new Rectangle().display();
-		}
-		else if(input.equals("Square")) {
-			new Square().display();
-		}
-		else
-			System.out.println("Wrong Input");
+		
+		ShapeObjectCreator s=new ShapeObjectCreator();
+		s.getShape(input).display();
 		sc.close();
 
 	}
