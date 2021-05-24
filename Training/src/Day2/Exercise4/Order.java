@@ -8,7 +8,7 @@ public class Order implements Serializable{
 	
 	private int order_id;
 	private  String product_name;
-	 private  String customer_name;
+	 transient private  String customer_name;
 	public Order(int order_id, String product_name, String customer_name) {
 		super();
 		this.order_id = order_id;
